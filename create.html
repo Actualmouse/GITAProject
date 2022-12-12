@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="header-btn">Online Shop Admin</h1>
+            <div class="vertical-line"></div>
+            <a href='index.html'><h1 id="header-btn">Products</h1></a>
+            <a href='customers.html'><h1 id="header-btn">Customers</h1></a>
+            <a href='orders.html'><h1 id="header-btn">Orders</h1></a>
+            <a href='reports.html'><h1 id="header-btn">Reports</h1></a>
+        </nav>
+    </header>
+    <h1 id="page-title">Create a new Product</h1>
+    <section id="create-section">
+
+       <form onsubmit="return false">
+        <table>
+            
+            <tr>
+                 <td style="text-align: left;">Name: </td>
+                 <td><input type="text" id="input-name" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Product Number: </td>
+                <td><input type="number" id="input-num" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Color: </td>
+                <td><input type="text" id="input-color" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Standard cost: </td>
+                <td><input type="number" min="0.00" max="1000" value="0.00" id="input-cost" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">List price: </td>
+                <td><input type="number" min="0.00" max="1000" value="0.00" id="input-price" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Size: </td>
+                <td><input type="text" id="input-size" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Weight: </td>
+                <td><input type="number" id="input-weight" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Sell start date: </td>
+                <td><input type="date" id="input-date" required></td>
+            </tr>
+
+            
+            
+            
+         </table>
+            <a href="index.html"><input onclick="getValues(),insertList(),insertData()" id="submit" type="submit"></a>
+                </form><br>
+
+<a href="index.html"><br><button id="sub-btn">Back to list</button><br><br><br></a>
+
+<a href="create.html"><button id="sub-btn" style="background-color: red; border-radius:10%;">Cancel</button></a>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
